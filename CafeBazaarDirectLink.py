@@ -4,23 +4,20 @@ import json
 import time
 
 class CafeBazaar:
-    def __init__(self,PackageName):
-        self.Packagename =PackageName
-
     def hash(string):
         hash1 = b'{"7cc78271-e338-4edc-849c-b105c5d51ba5":["getAppDownloadInfo","' + string + b'"' + b',19]}'
         m = hashlib.sha1()
         m.update(hash1)
         return (str(m.hexdigest()))
-    def GettLink(packagename):
-        package = packagename.encode()
+    def GettLink(PackageName):
+        package = PackageName.encode()
     
     
     
     
         url = 'http://ad.cafebazaar.ir/json/getAppDownloadInfo'
         data = {"id":1,
-                "hash":CofeBazaar.hash(package),
+                "hash":CafeBazaar.hash(package),
                 "packed":"xzrBQdWmJqg\/BQN+4Ll+XCuNIhYwIpWmFRH+I1wjEKfb2NwtXaU4OO6LmDY+dcNKPh6v1a2GdLYcCdZ6NliD0nbYjcglOT7OYB9fefCL5Ec=",
                 "iv":"UFDpSQCua3LwOKb8QWW4dS2PNSfMQ3ua1eWAuJY1G8xcaTS+Md+gbGMCSG3C5QJLmoiSFyOv\/QRFv6hWYsrA31ji0fGhWNGiqY9sWltqBst7YKoCqPLG0fCjoPKWPhvVhxKhjO8yT3RPalmDuPKpqGwW2fdHH+xPnuCDU51uUaE=",
                 "p2":"r7oshN8AYo64PZDDlJg8TmiEiXrrBjKlwPQITF94s\/3tKsyB1PJRJM5cD\/JZBEHK\/wWvGb\/jyj0GrOgbEMONHBoLCMR\/X6RWeC59LaItQaDk\/uY3+2cEisuBw3VCAkKL887SebW0xmB\/16rNl3LxLL5\/vgCZ4jaUvIb1dj0JEH4=",
