@@ -3,7 +3,7 @@ import hashlib
 import json
 import time
 
-class CofeBazaar:
+class CafeBazaar:
     def __init__(self,PackageName):
         self.Packagename =PackageName
 
