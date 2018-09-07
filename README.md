@@ -1,2 +1,2 @@
 # cafebazaardirectlink
-get direct link apk from cafebazaar
+get direct link apk from cafe bazaar
